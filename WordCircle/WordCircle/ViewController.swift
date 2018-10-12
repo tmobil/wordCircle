@@ -76,10 +76,27 @@ class ViewController: UIViewController {
         
         var index = 0
         circleWord = word
-        while circleWord.split(separator: " ").count <= 3 {
-            if let wordFromDict = getWordStartWith(String(circleWord.suffix(1)), word: String(circleWord.split(separator: " ")[index])) {
+        let prefix = String(circleWord.prefix(1)).lowercased()
+        
+        while circleWord.split(separator: " ").count <= (sortedKeys.count - 1) {
+            if let wordFromDict = getWordStartWith(String(circleWord.suffix(1)), word: String(circleWord.split(separator: " ")[index])){
                 circleWord += " " + wordFromDict
                 index += 1
+                
+                // to make sure word circle has minimum 3 verticies
+                if(wordFromDict.suffix(1) == prefix && circleWord.split(separator: " ").count > 3)
+                {
+                    return circleWord
+                }
+                
+            }
+            else
+            {
+                let alert = UIAlertController(title: "Word circle not found", message: " Choose another word", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                present(alert, animated: true, completion: nil)
+                
+                return " Word circle not found !! "
             }
         }
         
