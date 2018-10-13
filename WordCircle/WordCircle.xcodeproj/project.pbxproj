@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9679118C2171425700A60892 /* Alphanumeric+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679118B2171425700A60892 /* Alphanumeric+String.swift */; };
 		96CA88762166BB8F0093654A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CA88752166BB8F0093654A /* AppDelegate.swift */; };
 		96CA88782166BB8F0093654A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CA88772166BB8F0093654A /* ViewController.swift */; };
 		96CA887B2166BB8F0093654A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CA88792166BB8F0093654A /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9679118B2171425700A60892 /* Alphanumeric+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alphanumeric+String.swift"; sourceTree = "<group>"; };
 		96CA88722166BB8F0093654A /* WordCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CA88752166BB8F0093654A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CA88772166BB8F0093654A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +60,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9684D1DD2171172B00C35885 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9679118B2171425700A60892 /* Alphanumeric+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		96CA88692166BB8F0093654A = {
 			isa = PBXGroup;
 			children = (
+				9684D1DD2171172B00C35885 /* Extensions */,
 				96CA88742166BB8F0093654A /* WordCircle */,
 				96CA888C2166BB900093654A /* WordCircleTests */,
 				96CA88732166BB8F0093654A /* Products */,
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CA88782166BB8F0093654A /* ViewController.swift in Sources */,
+				9679118C2171425700A60892 /* Alphanumeric+String.swift in Sources */,
 				96CA88762166BB8F0093654A /* AppDelegate.swift in Sources */,
 				96CA887E2166BB8F0093654A /* WordCircle.xcdatamodeld in Sources */,
 			);
